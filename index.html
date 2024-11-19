@@ -1,168 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3nders Den</title>
-    <link rel="icon" href="src/icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: slateblue;
-            font-family: 'Silkscreen', sans-serif;
-            color: #000000;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Banner styling */
-        .banner {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .banner img {
-            width: 100%;
-            height: auto;
-            max-width: 35%;
-        }
-
-        /* Navbar styling */
-        .navbar {
-            width: 75%;
-            text-align: center;
-            margin: 10px auto;
-            background: #ccccff;
-            border: 3px solid #0000cc;
-            padding: 10px;
-        }
-
-        .navbar a {
-            color: #0000cc;
-            font-weight: bold;
-            text-decoration: none;
-            margin: 5px;
-        }
-
-        /* Flex container for three columns */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px auto;
-            width: 75%;  /* Same width as the navbar */
-        }
-
-        /* Left and Right column styling */
-        .left, .right {
-            text-align: center;
-            width: 20%;
-            background: #ffffff;
-            border: 2px solid #000000;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        /* Center column styling */
-        .center {
-            text-align: center;
-            padding: 20px;
-            background: #ffffff;
-            border: 2px solid #000000;
-            margin: 10px;
-            width: 50%;
-        }
-
-        /* Footer styling */
-        .footer {
-            width: 75%;  /* Same width as the navbar */
-            border: 2px solid #000000;
-            margin-top: 20px;
-            font-size: 0.8em;
-            background: #ffffff;
-            color: #000000;
-            padding: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        /* About header style */
-        aboutheader {
-            text-align: left;
-            text-decoration: underline;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        /* Responsive styling for smaller screens */
-        @media (max-width: 768px) {
-            .navbar {
-                width: 100%;
-                padding: 10px;
-            }
-
-            .navbar a {
-                display: block;
-                width: 100%;
-                text-align: center;
-                margin: 5px 0;
-            }
-
-            .container {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .left, .center, .right {
-                width: 100%;
-                margin: 10px 0;
-            }
-
-            .footer {
-                width: 90%;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width" initialScale="1.0">
+    <title>Ender's Den</title>
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="/style.css" type="text/css" media="all">
 </head>
 <body>
-
-    <div class="banner">
-        <img src="src/banner.png" alt="Banner Description">
-    </div>
-
-    <div class="navbar">
-        <a href="#">Music</a>
-        <a href="#">Movies</a>
-        <a href="#">Video Games</a>
-        <a href="#">Hobbies</a>
-        <a href="#about">About Me</a>
-        <a href="#">Links</a>
-    </div>
-
-    <div class="container">
-        <div class="left">
-            <aboutheader>Left Column</aboutheader>
-            <p>This is the left column.</p>
+    <div id="container">Work In Progress!!
+        <a><div id=header>PLACEHOLDER</div></a>
+        <div id="navbar">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/music">MUSIC</a></li>
+                <li><a href="/movies">MOVIES</a></li>
+                <li><a href="/games">GAMES</a></li>
+                <li><a href="/hobbies">HOBBIES</a></li>
+            </ul>
+        </div>
+        <div id="flex">
+            <div id="left">
+                PLACEHOLDER
+            </div>
+            <div id="center">
+                <h1><center> PLACEHOLDER </center></h1>
+                
+            </div>
+            <div id="right">
+                CHANGLELOG
+            </div>
         </div>
         
-        <div class="center">
-            <aboutheader id="about">About Me</aboutheader>
-            <p>Welcome to my site! Here, I share my passions about music, movies, video games, and more.</p>
-        </div>
-
-        <div class="right">
-            <aboutheader>Right Column</aboutheader>
-            <p>This is the right column.</p>
-        </div>
     </div>
-
-    <div class="footer">
-        <p>Hello There!</p>
-    </div>
-
 </body>
-</html>

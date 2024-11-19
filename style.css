@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Pixel Operator';
+    src: url("/pixel_operator/PixelOperator.ttf");
+}
+
+@font-face {
+    font-family: 'Pixel Operator';
+    src: url("/pixel_operator/PixelOperator-Bold.ttf");
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Pixel Operator', sans-serif;
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+    margin:auto;
+}
+
+#container{
+    margin: 0 auto;
+}
+
+#header{
+width: 70%;
+margin: auto;
+text-align: center;
+border: solid;
+border-color: #ffffff;
+}
+
+#navbar{
+    width:85%;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+#navbar ul{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#navbar li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#navbar li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: steelblue;
+    text-decoration: underline;
+}
+
+#flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+#left {
+    padding: 5px;
+    text-align: center;
+    width: 25%;
+    background-color: #ffffff;
+    color: #000000;
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 0px;
+    box-sizing: border-box;  
+    height: auto;
+}
+
+#center{
+    padding: 5px;
+    text-align: center;
+    width: 35%;
+    background-color: #ffffff;
+    color: #000000;
+    margin:10px;
+    margin-top: 10px;
+    box-sizing: border-box; 
+    height:auto;
+}
+
+#right{
+    padding: 5px;
+    text-align: center;
+    width: 25%;
+    background-color: #ffffff;
+    color: #000000;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 10px;
+    box-sizing: border-box; 
+    height: auto;
+}
+
+#changelog{
+
+}
