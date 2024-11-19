@@ -1,0 +1,46 @@
+#left, #center, #right {
+    padding: 5px;
+    text-align: center;
+    background-color: #b1b1b1;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%
+}
+
+#left {
+    margin-left: 10.5%;
+    width: 20%;
+    float: left;
+}
+
+#center {
+    width: 35%;
+    float: left;
+    margin: 10px;
+}
+
+#right {
+    width: 20%;
+    float: left;
+    margin-right: auto;
+}
+
+#changelog, #welcome, #status, #socials {
+    margin: 8px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+
+#status, #changelog {
+    padding: 15px;
+}
+
+#maingroup:after {
+    content: "";
+    display: table;
+    clear: both;
+}
