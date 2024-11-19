@@ -23,7 +23,7 @@
 
 .blinking{
     margin: 5px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     animation: blink 1.5s infinite;
 }
 
@@ -40,7 +40,7 @@ body{
 }
 
 #header{
-width: 70%;
+width: 75%;
 margin: auto;
 text-align: center;
 border: solid;
@@ -50,6 +50,7 @@ border-color: #ffffff;
 #navbar{
     width:75%;
     margin: auto;
+    margin-bottom: 10px;
     background-color: #ffffff;
 }
 
@@ -98,3 +99,18 @@ border-color: #ffffff;
 
 }
 
+#footer{
+    width: 75%;
+    padding: 5px;
+    margin-top: 10px;
+    margin: auto;
+    text-align: center;
+    border: solid;
+    border-color: #ffffff;
+}
+
+#columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
