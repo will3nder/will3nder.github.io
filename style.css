@@ -9,6 +9,25 @@
     font-weight: bold;
 }
 
+@keyframes blink{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.125;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#blinking{
+    text-align: center;
+            margin:5px;
+            color: rgb(0, 0, 0);
+            animation: blink 1.5s infinite;
+}
+
 body{
     font-family: 'Pixel Operator', sans-serif;
     margin: 0;
@@ -30,12 +49,15 @@ border-color: #ffffff;
 }
 
 #navbar{
-    width:85%;
+    width:75%;
     margin: auto;
     background-color: #ffffff;
 }
 
-#navbar ul{
+.links{
+}
+
+#navbar .links ul{
     display: flex;
     margin: auto;
     justify-content: space-evenly;
@@ -43,17 +65,25 @@ border-color: #ffffff;
     margin-top: 10px;
 }
 
-#navbar li{
+.links ul{
+    margin: auto;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.links li{
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-#navbar li a {
+.links li a {
     color: #000000;
     text-decoration: none;
 }
 
-#navbar li a:hover {
+.links li a:hover {
     color: steelblue;
     text-decoration: underline;
 }
@@ -68,41 +98,68 @@ border-color: #ffffff;
 #left {
     padding: 5px;
     text-align: center;
-    width: 25%;
-    background-color: #ffffff;
+    width: 20%;
+    background-color: #b1b1b1;
     color: #000000;
     margin: auto;
     margin-top: 10px;
     margin-right: 0px;
     box-sizing: border-box;  
-    height: auto;
+    height: 350px;
 }
 
 #center{
     padding: 5px;
     text-align: center;
     width: 35%;
-    background-color: #ffffff;
+    background-color: #b1b1b1;
     color: #000000;
     margin:10px;
     margin-top: 10px;
     box-sizing: border-box; 
-    height:auto;
+    height: 350px;
 }
 
 #right{
     padding: 5px;
     text-align: center;
-    width: 25%;
-    background-color: #ffffff;
+    width: 20%;
+    background-color: #b1b1b1;
     color: #000000;
     margin: auto;
     margin-left: 0px;
     margin-top: 10px;
     box-sizing: border-box; 
-    height: auto;
+    height: 350px;
 }
 
 #changelog{
+    margin: 5px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
 
+#welcome{
+    margin:5px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    padding:5px;
+}
+
+#status{
+    margin: 5px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    padding: 15px;
+    color: #000000;
+}
+
+#socials{
+    margin: 5px;
+    margin-bottom: 25px;
+    background-color: #ffffff; 
+    color:#000000;
+    padding: 5px;
 }
