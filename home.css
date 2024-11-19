@@ -4,7 +4,7 @@
     background-color: #b1b1b1;
     color: #000000;
     margin-bottom: 10px;
-    height: 350px;
+    height: auto;
     width: 100%
 }
 
@@ -39,3 +39,39 @@
     padding: 15px;
 }
 
+#links {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#links ul {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+#links li {
+    padding: 5px 10px;
+}
+
+#links li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#links li a:hover {
+    color: steelblue;
+    text-decoration: underline;
+}
+
+#moon{
+    width: fit-content;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;;
+    background-color: #ffffff;
+}
