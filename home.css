@@ -1,3 +1,8 @@
+#columns{
+    height: auto;
+    width: 100%;
+}
+
 #left, #center, #right {
     padding: 5px;
     text-align: center;
@@ -12,6 +17,7 @@
     margin-left: 10.5%;
     width: 20%;
     float: left;
+    min-width: 180px;
 }
 
 #center {
@@ -69,9 +75,14 @@
 }
 
 #moon{
-    width: fit-content;
-    align-items: center;
-    margin: 10px;
-    padding: 5px;;
-    background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 128px;
+    border: 10px solid #ffffff;
+}
+
+#moon img{
+    width: 100%;
+    max-width: 100%;
+    height:auto
 }

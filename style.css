@@ -9,26 +9,27 @@
     font-weight: bold;
 }
 
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.125; }
+    100% { opacity: 1; }
+}
+
 @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.125;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 1; }
+    50% { opacity: 0.125; }
+    100% { opacity: 1; }
 }
 
 .blinking {
     margin: 5px;
     color: #ffffff;
     animation: blink 1.5s infinite;
+    -webkit-animation: blink 1.5s infinite;
 }
 
 body {
-    font-family: 'Pixel Operator', sans-serif;
+    font-family: 'Pixel Operator', sans-serif, Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: #000000;
     color: #ffffff;
@@ -42,8 +43,7 @@ body {
     width: 75%;
     margin: auto;
     text-align: center;
-    border: solid;
-    border-color: #ffffff;
+    border: solid 1px #ffffff;
 }
 
 #navbar {
@@ -80,11 +80,10 @@ body {
     width: 75%;
     padding: 5px;
     margin-top: 10px;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
-    border: solid;
-    border-color: #ffffff;
-    height: fit-content;
+    border: solid 1px #ffffff;
+    height: auto;
 }
 
 #columns:after {
