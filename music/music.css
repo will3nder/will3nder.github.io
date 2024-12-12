@@ -1,0 +1,50 @@
+#columns {
+    width: 100%;
+    /* max-width: 840px;
+    max-height: 1060px; */
+    margin: 0 auto;
+    text-align: left;
+}
+
+.album {
+    overflow: hidden;
+    margin-bottom: 15px;
+    width: 100%;
+    height: fit-content;
+}
+
+.albumcover {
+    float: left;
+    width: 30%;
+    margin: 10px;
+    max-width: 400px;
+    margin-left: 10%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.albumcover img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+.albumdescription {
+    margin-top: 10px;
+    float: left;
+    width: 45%;
+    text-align: left;
+    max-height: 400px;
+    padding: 10px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+.album:after {
+    content: "";
+    display: table;
+    clear: both;
+}

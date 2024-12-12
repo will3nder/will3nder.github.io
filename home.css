@@ -1,6 +1,7 @@
-#columns{
-    height: auto;
+#columns {
     width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 #left, #center, #right {
@@ -10,27 +11,30 @@
     color: #000000;
     margin-bottom: 10px;
     height: auto;
-    width: 100%
+    float: left;
+    margin-right: 1%;
 }
 
 #left {
-    margin-left: 10.5%;
+    margin-left: 10%;
     width: 20%;
-    float: left;
     min-width: 180px;
 }
 
 #center {
     width: 35%;
-    float: left;
-    margin: 10px;
-    margin-top: 0px;
+    min-width: 250px;
 }
 
 #right {
     width: 20%;
-    float: left;
-    margin-right: auto;
+    min-width: 180px;
+}
+
+#columns:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #changelog, #welcome, #status, #socials {
@@ -74,15 +78,16 @@
     text-decoration: underline;
 }
 
-#moon{
+#moon {
     text-align: center;
     margin: 0 auto;
     max-width: 128px;
     border: 10px solid #ffffff;
+    margin-bottom: 10px;
 }
 
-#moon img{
+#moon img {
     width: 100%;
     max-width: 100%;
-    height:auto
+    height: auto;
 }
