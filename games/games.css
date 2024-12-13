@@ -1,31 +1,87 @@
-#left, #right {
-    padding: 5px;
-    text-align: center;
-    background-color: #b1b1b1;
-    color: #000000;
-    margin: 5px;
+#columns {
+    width: 100%;
+    /* max-width: 840px;
+    max-height: 1060px; */
+    margin: 0 auto;
+    text-align: left;
+}
+
+#skips{
+    width: 55%;
+    margin: auto;
     margin-bottom: 10px;
-    height: auto;
-    width: 100%
+    text-align: center;
 }
 
-#left{
-    margin-left: 14%;
-    float: left;
+#skips ul {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+#skips li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+#skips li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#skips li a:hover {
+    text-decoration: underline;
+}
+
+#games, #consoles {
     width: 35%;
-}
-
-#right{
-    float: left;
-    width: 35%
-}
-
-#games, #consoles{
-    margin: 5px;
-    margin-bottom: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
     background-color: #ffffff;
     color: #000000;
-    padding: 7px;
+}
+
+.game, .console{
+    overflow: hidden;
+    margin-bottom: 15px;
+    width: 100%;
+    height: fit-content;
+}
+
+.gameimage, .consoleimage {
+    float: left;
+    width: 30%;
+    margin: 10px;
+    max-width: 400px;
+    margin-left: 10%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.gameimage img, .consoleimage img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+.gamedescription, .consoledescription {
+    margin-top: 10px;
+    float: left;
+    width: 45%;
+    text-align: left;
+    max-height: 400px;
+    padding: 10px;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 
+.game::after, .consoles:after {
+    content: "";
+    display: table;
+    clear: both;
+}
