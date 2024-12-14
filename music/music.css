@@ -1,7 +1,5 @@
 #columns {
     width: 100%;
-    /* max-width: 840px;
-    max-height: 1060px; */
     margin: 0 auto;
     text-align: left;
 }
@@ -35,16 +33,61 @@
     margin-top: 10px;
     float: left;
     width: 45%;
-    text-align: left;
-    max-height: 400px;
+    max-width: 400px;
     padding: 10px;
     color: #000000;
     background-color: #ffffff;
 }
 
-
 .album:after {
     content: "";
-    display: table;
-    clear: both;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.musicplayer {
+    float: left;
+    max-width: 400px;;
+    margin: 10 0 10 0;
+    width: 45%;
+    text-align: center;
+    padding: 0 10 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.musicplayer h2{
+    padding: 0;
+    font-size: 20;
+}
+
+.playpausebutton {
+    margin: 0 0 10;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.playpausebutton:before {
+    position: relative;
+    top: 1px;
+    content: '▶';
+}
+
+input[type="checkbox"]:checked + .playpausebutton:before {
+    content: '❚❚';
+}
+
+.playpausebutton:hover {
+    transform: scale(1.1);
 }
