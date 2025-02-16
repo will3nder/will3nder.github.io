@@ -25,18 +25,24 @@ table {
     border-collapse: collapse;
     width: 100%;
     text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+@media (max-width: 700px) {
+    table {
+      display: none;
+    }
+  }
+  
+
 td {
-    border-right: dotted 1px #555;
-    border-bottom: dotted 1px #555;
     padding: 0.4em 0.25em;
 }
 
 a {
     color: #bbb;
     background: transparent;
-    text-decoration: none;
 }
 
 a:visited {
@@ -114,7 +120,7 @@ a:active, a:hover {
     padding: 0;
     border: 1px solid #555;
     width: auto;
-    min-width: 850px;
+    min-width: 0px;
     max-width: 1200px;
 }
 
