@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prom?</title>
+  <link rel="stylesheet" href="/promposal/style.css">
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id="message" style="font-family: Arial, sans-serif; font-size: 2rem; padding-bottom: 100px;">Hey Hot Stuff<br>Hope your day has been going well.<br>Thought I would come to share a Crazy Question.<br></div>
+  <div id="message" style="font-family: Arial, sans-serif; font-size: 1rem;">And Crazy Thoughts (Because we both know I have a lot of those)<br></div>
+  <div id="message" style="font-family: Arial, sans-serif; font-size: 4rem;">Would you  go to prom with me?<br></div>
+  <div id="message" style="font-family: Arial, sans-serif; font-size: 1rem;">Sadly this is a descision you have to make</div>
+  <div class="buttons">
+    <button class="btn yes-btn">OMG YES</button>
+    <button class="btn no-btn" onmouseover="this.innerText='Fuck you mean NUH UH?'" onmouseout="this.innerText='NUH UH'">NUH UH</button>
+  </div>
+  <div proscons style="display: flex; padding-top: 20px; text-align: center;">
+    <div pros style="flex: 50%">Pros:<br>Me & You<br>Me<br>You<br>Free Tacobell Afterprom<br>Guaranteed Preprom Paid Food<br>Cushy Ride<br>NaNeinf Attention</div>
+    <div cons style="flex: 50%;">Cons:<br>None?<br>I might get tired of not being able to just watch shows on your coutch or bed.<br>Might be a bit too much tism.</div>
+  </div>
+
+  <script>
+    let crackCount = 0;
+    const crackLimit = 5;
+    const overlay = document.getElementById("overlay");
+    const crackImages = ["crack1.png", "crack2.png", "crack3.png", "crack4.png", "crack5.png"];
+
+    document.body.addEventListener("click", () => {
+      if (crackCount >= crackLimit) return;
+      overlay.style.backgroundImage = `url('${crackImages[crackCount]}')`;
+      crackCount++;
+      if (crackCount === crackLimit) {
+        setTimeout(() => {
+          document.body.classList.add("revealed");
+        }, 500);
+      }
+    });
+  </script>
+</body>
+</html>
