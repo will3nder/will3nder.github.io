@@ -1,3 +1,11 @@
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
 body, p, h1, h2, h3, h4, h5, h6, table, td, th, li, ul, ol, a, div, span {
     font-family: Tahoma, Arial, helvetica, sans-serif;
     line-height: 1.5em;
@@ -205,4 +213,44 @@ footer a:hover {
 
 .center a:hover {
     background: transparent;
+}
+
+.playlist {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #555;
+    background: #1a1a1a;
+}
+
+.playlist img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.tracklist {
+    max-height: 250px;
+    overflow-y: scroll;
+    border: 1px solid #444;
+    background: #111;
+    padding: 10px;
+}
+
+.track {
+    margin-bottom: 12px;
+}
+
+.track .title {
+    display: block;
+    font-size: 1em;
+    color: #fff;
+}
+
+.track .artist {
+    display: block;
+    font-size: 0.85em;
+    color: #bbb;
+    margin-left: 10px;
 }
